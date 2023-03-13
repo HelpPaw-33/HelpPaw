@@ -281,24 +281,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ao-xd-l8N">
-                                <rect key="frame" x="16" y="513.5" width="288" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Забрать меня домой"/>
+                                <rect key="frame" x="16" y="512" width="288" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Забрать меня домой">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Feo-BM-EEC" kind="show" id="Kiy-Y8-vmI"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-eo-6wl">
-                                <rect key="frame" x="16" y="64" width="288" height="429.5"/>
+                                <rect key="frame" x="16" y="64" width="288" height="428"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-qs-vh3">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="429.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="428"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-YJ-V9y">
-                                                <rect key="frame" x="16" y="16" width="256" height="172"/>
+                                                <rect key="frame" x="16" y="16" width="256" height="171"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jDC-Ir-5q8">
-                                                <rect key="frame" x="16" y="212" width="256" height="122"/>
+                                                <rect key="frame" x="16" y="211" width="256" height="122"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-I5-0gL">
                                                         <rect key="frame" x="0.0" y="0.0" width="256" height="20.5"/>
